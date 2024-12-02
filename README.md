@@ -1,4 +1,5 @@
 # LSTM-BFGS
+![image](https://github.com/user-attachments/assets/66743746-565b-4ed1-b112-4cdc1bd1e88f)
 
 ## Introduction
 
