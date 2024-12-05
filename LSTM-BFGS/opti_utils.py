@@ -49,7 +49,7 @@ def strong_wolfe(W,Y,batchsize,f, x, step_dir, loss, grad, device, c1=1e-4, c2=0
     grad=grad.unsqueeze(1)
     #print(step_dir.shape)
     #step_dir=step_dir.unsqueeze(2)
-    for i in range(max_iter):
+    for _ in range(max_iter):
         new_loss = f(W,Y,x + step_size * step_dir.squeeze())
         
         armijo_condition = new_loss > loss + c1 * step_size.squeeze() * torch.matmul(grad, step_dir).squeeze()
